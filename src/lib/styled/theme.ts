@@ -8,6 +8,9 @@ export const theme = {
     white: 'rgb(255, 255, 255)',
     red: 'rgb(229, 57, 53)',
     lightRed: 'rgb(254, 242, 242)',
+    lightBlue: 'rgb(230, 242, 255)',
+    lightGreen: 'rgb(233, 247, 238)',
+    green: 'rgb(51, 153, 88)',
   },
   font: {
     family: {
@@ -16,11 +19,14 @@ export const theme = {
     weight: {
       regular: 400,
       medium: 500,
+      semiBold: 600,
+      bold: 700,
     },
   },
   borderRadius: {
     sm: '0.8rem',
     md: '1.2rem',
+    roundedFull: '999rem',
   },
   mq: {
     sm: '@media (min-width: 480px)',
