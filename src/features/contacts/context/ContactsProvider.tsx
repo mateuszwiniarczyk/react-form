@@ -21,7 +21,7 @@ export const ContactsProvider: React.FC<{ children: React.ReactNode }> = ({
 
   const addContact = useCallback(
     (contact: Omit<Contact, 'id'>) => {
-      setContacts([...contacts, { id: uuid(), ...contact }]);
+      setContacts([{ id: uuid(), ...contact }, ...contacts]);
     },
     [contacts, setContacts],
   );
