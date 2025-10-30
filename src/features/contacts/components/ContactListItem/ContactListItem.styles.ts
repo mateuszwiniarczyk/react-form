@@ -1,15 +1,13 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.li`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   padding: 1.6rem;
   background-color: ${({ theme }) => theme.color.white};
   border-radius: ${({ theme }) => theme.borderRadius.md};
-  transition-property: box-shadow;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid ${({ theme }) => theme.color.gray};
   box-shadow:
     rgba(0, 0, 0, 0) 0px 0px 0px 0px,

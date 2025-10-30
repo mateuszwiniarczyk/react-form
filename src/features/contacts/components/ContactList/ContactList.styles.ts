@@ -5,7 +5,8 @@ export const ContactListWrapper = styled.div`
   height: 100%;
 `;
 
-export const StyledContactList = styled.div`
+export const StyledContactList = styled.ul`
+  list-style: none;
   display: flex;
   flex-direction: column;
   gap: 2rem;
