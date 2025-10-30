@@ -17,7 +17,7 @@ export const InputWrapper = styled.div`
 `;
 
 type InputProps = {
-  isError?: boolean;
+  $isError?: boolean;
 };
 
 export const Input = styled.input<InputProps>`
@@ -31,7 +31,7 @@ export const Input = styled.input<InputProps>`
   color: ${({ theme }) => theme.color.black};
   background-color: ${({ theme }) => theme.color.white};
   border: 0.2rem solid
-    ${({ theme, isError }) => (isError ? theme.color.red : theme.color.gray)};
+    ${({ theme, $isError }) => ($isError ? theme.color.red : theme.color.gray)};
   border-radius: ${({ theme }) => theme.borderRadius.md};
   appearance: none;
   outline: none;
@@ -65,13 +65,14 @@ export const Label = styled.label`
 `;
 
 type InputHintProps = {
-  isError?: boolean;
+  $isError?: boolean;
 };
 
-export const InputHint = styled.p<InputHintProps>`
+export const InputHint = styled.span<InputHintProps>`
+  display: block;
   margin-top: 1rem;
   font-size: 1.6rem;
   font-weight: ${({ theme }) => theme.font.weight.medium};
-  color: ${({ theme, isError }) =>
-    isError ? theme.color.red : theme.color.darkGray};
+  color: ${({ theme, $isError }) =>
+    $isError ? theme.color.red : theme.color.darkGray};
 `;
