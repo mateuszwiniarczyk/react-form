@@ -31,12 +31,16 @@ export const ContactForm = () => {
         type="email"
         {...register('email')}
         error={errors.email?.message}
+        aria-required
+        autoComplete="on"
       />
       <FormField
         label="Imię"
         type="text"
         {...register('firstName')}
         error={errors.firstName?.message}
+        aria-required
+        autoComplete="on"
       />
       <FormField
         type="number"
@@ -44,6 +48,8 @@ export const ContactForm = () => {
         {...register('phoneNumber', { valueAsNumber: true })}
         hint="Numer 9 cyfrowy."
         error={errors.phoneNumber?.message}
+        aria-required
+        autoComplete="on"
       />
       <Button type="submit">Zapisz</Button>
     </Form>
