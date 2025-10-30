@@ -13,6 +13,10 @@ export const theme = {
     family: {
       roboto: '"Roboto", sans-serif',
     },
+    weight: {
+      regular: 400,
+      medium: 500,
+    },
   },
   borderRadius: {
     sm: '0.8rem',

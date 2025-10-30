@@ -1,8 +1,14 @@
+import { ContactForm } from '../ContactForm';
 import { Wrapper } from './Contacts.styles';
 
 export const Contacts = () => (
   <Wrapper>
-    <p>Form</p>
-    <p>Contacts List</p>
+    <ContactForm />
+    <div
+      style={{
+        display: 'flex',
+        flex: '1 1 50%',
+      }}
+    ></div>
   </Wrapper>
 );

@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${({ theme }) => theme.color.neutral};
     color: ${({ theme }) => theme.color.black};
-    font-weight: 400;
+    font-weight: ${({ theme }) => theme.font.weight.regular};
     font-family: ${({ theme }) => theme.font.family.roboto};
     line-height: 1.5;
     font-size: 1.6rem;
@@ -26,4 +26,6 @@ export const GlobalStyle = createGlobalStyle`
       padding: 5rem;
     }
   }
+
+  input, textarea, select { font-family:inherit; }
 `;
