@@ -13,12 +13,13 @@ export const StyledContactList = styled.ul`
   padding-right: 1rem;
   padding-bottom: 1rem;
   overflow-y: auto;
-  height: 30rem;
+  max-height: 30rem;
 
   ${({ theme }) => theme.mq.md} {
     position: absolute;
     inset: 0;
     height: 100%;
     width: 100%;
+    max-height: none;
   }
 `;
