@@ -5,9 +5,13 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { contactSchema } from '../../schema';
 import type { Contact } from '../../types';
+import { useContacts } from '../../context';
 
 export const ContactForm = () => {
+  const { addContact } = useContacts();
+
   const {
+    reset,
     register,
     handleSubmit,
     formState: { errors },
@@ -16,7 +20,8 @@ export const ContactForm = () => {
   });
 
   const onSubmit = (data: Omit<Contact, 'id'>) => {
-    console.log(data);
+    addContact(data);
+    reset();
   };
 
   return (
