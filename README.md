@@ -1,73 +1,52 @@
-# React + TypeScript + Vite
+# React Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Click_Here-blue?style=for-the-badge)](https://react-form-preview.vercel.app/)
 
-Currently, two official plugins are available:
+A responsive contact management app built with **React**, **TypeScript**, and **Vite**.  
+The project features a fully accessible contact form and contact list with data stored in **Local Storage**.  
+Form validation is handled with **React Hook Form** and **Zod**, while styling is implemented using **Styled Components** with a global theme and accessibility support.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ✨ **Add Contacts** - Easily add new contacts via a floating-label form
+- 🗑️ **Delete Contacts** – Remove saved contacts from the list with one click
+- 🧩 **React Hook Form + Zod** – Type-safe validation and form management
+- 💾 **Local Storage Persistence** – Contacts are saved locally and persist after reload
+- ♿ **Accessibility (a11y)** – Both the form and contact list are fully accessible
+- 🎨 **Styled Components + Theme** – Global theme management and clean styling
+- 📱 **Responsive Design** – Optimized for mobile, tablet, and desktop
+- 🧠 **Context Provider** – Handles contact state (adding, deleting, listing)
+- ✅ **ESLint + TypeScript** – Ensures code quality and type safety
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧰 Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React (Vite + TypeScript)**
+- **React Hook Form**
+- **Zod**
+- **Styled Components**
+- **Context API**
+- **Local Storage**
+- **ESLint**
+- **Prettier**
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📦 Installation
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+```bash
+# Clone the repository
+git clone https://github.com/mateuszwiniarczyk/react-form.git
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# Navigate to the project directory
+cd react-form
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
 ```
