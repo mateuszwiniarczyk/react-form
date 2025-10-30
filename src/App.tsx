@@ -1,7 +1,11 @@
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyle, theme } from '@/lib/styled';
+
 const App = () => (
-  <div>
+  <ThemeProvider theme={theme}>
+    <GlobalStyle />
     <h1>React Form</h1>
-  </div>
+  </ThemeProvider>
 );
 
 export default App;
