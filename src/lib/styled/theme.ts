@@ -14,6 +14,10 @@ export const theme = {
       roboto: '"Roboto", sans-serif',
     },
   },
+  borderRadius: {
+    sm: '0.8rem',
+    md: '1.2rem',
+  },
   mq: {
     sm: '@media (min-width: 480px)',
     md: '@media (min-width: 768px)',
