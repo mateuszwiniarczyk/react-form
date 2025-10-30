@@ -8,8 +8,8 @@ export const Form = styled.form`
   gap: 2.5rem 0;
   flex: 1 1 50%;
 
-  ${({ theme }) => theme.mq.lg} {
-    padding-right: 7.7rem;
+  ${({ theme }) => theme.mq.md} {
+    padding-right: 5.6rem;
 
     &::after {
       content: '';
@@ -20,5 +20,9 @@ export const Form = styled.form`
       height: 100%;
       background-color: ${({ theme }) => theme.color.gray};
     }
+  }
+
+  ${({ theme }) => theme.mq.lg} {
+    padding-right: 7.6rem;
   }
 `;

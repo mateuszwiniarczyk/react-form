@@ -8,7 +8,7 @@ export const Wrapper = styled.section`
   border-radius: ${({ theme }) => theme.borderRadius.md};
   background-color: ${({ theme }) => theme.color.white};
 
-  ${({ theme }) => theme.mq.lg} {
+  ${({ theme }) => theme.mq.md} {
     flex-direction: row;
     align-items: flex-start;
     gap: 0;

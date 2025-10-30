@@ -14,7 +14,7 @@ export const StyledContactList = styled.div`
   overflow-y: auto;
   height: 30rem;
 
-  ${({ theme }) => theme.mq.lg} {
+  ${({ theme }) => theme.mq.md} {
     position: absolute;
     inset: 0;
     height: 100%;
