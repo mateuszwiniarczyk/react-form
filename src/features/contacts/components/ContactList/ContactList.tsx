@@ -1,5 +1,5 @@
 import { useContacts } from '../../context';
-import { ContactListItem } from '../ContactListItem/ContactListItem';
+import { ContactListItem } from '../ContactListItem';
 import { StyledContactList, ContactListWrapper } from './ContactList.styles';
 
 export const ContactList = () => {
