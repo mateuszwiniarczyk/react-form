@@ -34,12 +34,6 @@ export const ContactInfo = styled.div`
   line-height: 1.5;
   color: ${({ theme }) => theme.color.black};
   min-width: 0;
-
-  > * {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
 `;
 
 export const ContactName = styled.h4`
@@ -47,6 +41,11 @@ export const ContactName = styled.h4`
   font-weight: ${({ theme }) => theme.font.weight.semiBold};
   color: ${({ theme }) => theme.color.black};
   margin-bottom: 0.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  overflow-wrap: break-word;
 `;
 
 export const DeleteContactButton = styled.button`

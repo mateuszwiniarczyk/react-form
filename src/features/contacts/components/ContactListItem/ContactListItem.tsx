@@ -35,7 +35,7 @@ export const ContactListItem = ({ contact }: ContactListItemProps) => {
       </ContactInfo>
       <DeleteContactButton
         onClick={() => deleteContact(contact.id)}
-        aria-label="Delete contact"
+        aria-label="Usuń kontakt"
       >
         <DeleteIcon width={20} height={20} aria-hidden="true" />
       </DeleteContactButton>

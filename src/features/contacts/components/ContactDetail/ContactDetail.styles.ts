@@ -41,4 +41,9 @@ export const Text = styled.p`
   font-size: 1.4rem;
   font-weight: 450;
   color: ${({ theme }) => theme.color.black};
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  overflow-wrap: break-word;
 `;
