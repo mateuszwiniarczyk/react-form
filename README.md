@@ -6,6 +6,12 @@ A responsive contact management app built with **React**, **TypeScript**, and **
 The project features a fully accessible contact form and contact list with data stored in **Local Storage**.  
 Form validation is handled with **React Hook Form** and **Zod**, while styling is implemented using **Styled Components** with a global theme and accessibility support.
 
+<img width="1437" height="672" alt="Zrzut ekranu 2025-10-30 o 16 08 06" src="https://github.com/user-attachments/assets/cf06d2d2-724c-4d80-a3e4-99aec2ff0231" />
+
+<br />
+
+<img width="2874" height="1416" alt="image" src="https://github.com/user-attachments/assets/94818856-7321-4a27-a4c2-b00789e20a89" />
+
 ---
 
 ## 🚀 Features
